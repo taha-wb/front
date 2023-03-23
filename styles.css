@@ -1,0 +1,99 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Outfit:wght@400;700&display=swap');
+
+:root {
+--White: hsl(0, 0%, 100%);
+--Lightgray: hsl(212, 45%, 89%);
+--Grayish_blue: hsl(220, 15%, 55%);
+--Dark_blue: hsl(218, 44%, 22%);
+--font: 'Outfit', sans-serif;
+  }
+
+
+body {
+    background-color: var(--Lightgray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    
+    
+}
+
+.container{
+    background-color: var(--White);
+    width: 350px;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container img {
+   
+    height: 50%;
+    margin: 1rem;
+    border-radius: 2rem;
+}
+.container .description{
+    margin: 1rem;
+   
+}
+.container .description .heading {
+    
+    text-align: center;
+    color: var(--Dark_blue);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font);
+    
+
+}
+
+.container .description .paragraph {
+    padding-top: .5rem;
+    text-align: center;
+    color: var(--Grayish_blue);
+    font-weight: 400;
+    font-family: var(--font);
+    font-size: 1.5;
+}
+
+
+@media (min-width:775px ){
+    .container{
+        width: 400px;
+        
+    }
+    .container .description .heading {
+    
+        font-size: 1.5rem;
+ 
+    }
+    .container .description .paragraph {
+    
+        font-size: 2rem;
+    }
+    
+}
+@media (max-width:775px ){
+    .container{
+        width: 300px;
+        
+    }
+    .container .description .heading {
+    
+        font-size: .1.2rem;
+      
+        
+    
+    }
+}
+
+@media (max-width:375px ){
+    .container{
+        width: 250px;
+        
+    }
+   
+}
